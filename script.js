@@ -88,7 +88,6 @@ let inventorNames = []
 
 // Enter your solution code here:
 inventorNames = inventors.map((inventorName) => {
-  console.log("test")
   return(`first: ${inventorName.first}, last: ${inventorName.last}`)
 })
 
@@ -119,11 +118,18 @@ console.log('Exercise 2 My Result: ', inventorNames)
 let sortedByBirthYear = []
 
 // Enter your solution code here:
+sortedByBirthYear = inventors.sort((birthYearA, birthYearB) => {
+  return birthYearA.year - birthYearB.year
+})
 
+    // sorting strings -> .sort() (default)
+    // sorting numbers - will need to use a compare function - sort() compares 2 values; it sends the values to a compare function, & sorts the values according to the returned ( neg, 0, pos) value -> .sort(a, b)
+      // to sort numbers in decending order -> return a - b
+      // to sort in accending order -> b - a
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
-// console.log('Exercise 3 My Result: ', sortedByBirthYear)
+console.log('Exercise 3 My Result: ', sortedByBirthYear)
 // console.log('Exercise 3 Correct Result: ',
 //     [
 //         { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
