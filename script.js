@@ -158,11 +158,13 @@ console.log('Exercise 3 My Result: ', sortedByBirthYear)
 let inventorNamedAda = {}
 
 // Enter you solution code here:
-
+inventorNamedAda = inventors.find((ada) => {
+  return ada.first === "Ada"
+})
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
-// console.log('Exercise 4 My Result: ', inventorNamedAda)
+console.log('Exercise 4 My Result: ', inventorNamedAda)
 // console.log('Exercise 4 Correct Result: ', { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 })
 
 
