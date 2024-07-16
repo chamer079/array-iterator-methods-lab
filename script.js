@@ -335,8 +335,13 @@ let totalYearsLived = 0
 
 
 
+// totalYearsLived = inventors.reduce((yearBorn, yearDied) => { // <-- prints NaN
+//   return yearBorn.year + yearDied.passed
+// })
+
+
 // Check your return value: *** UNCOMMENT BELOW ***
-// console.log('Bonus 1 My Result: ', totalYearsLived)
+console.log('Bonus 1 My Result: ', totalYearsLived)
 // console.log('Bonus 1 Correct Result: ', 861)
 
 
