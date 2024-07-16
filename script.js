@@ -178,8 +178,10 @@ console.log('Exercise 4 My Result: ', inventorNamedAda)
 let firstLast = []
 
 // Enter your solution code here:
+
 firstLast = people.map((person) => {
-//  if(person === ", ")
+ console.log(person)
+  if(person == ", ")
   return person.split(", ")
 console.log("test", person)
 })
@@ -243,11 +245,13 @@ console.log("test", person)
 let isAdultPresent = null
 
 // Enter your solution code here:
-
+isAdultPresent = devs.some((isAdult) => {
+  return isAdult.year >= 18
+})
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
-// console.log('Exercise 6 My Result: ', isAdultPresent)
+console.log('Exercise 6 My Result: ', isAdultPresent)
 // console.log('Exercise 6 Correct Result: ', true)
 
 
