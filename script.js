@@ -180,10 +180,10 @@ let firstLast = []
 // Enter your solution code here:
 
 firstLast = people.map((person) => {
- console.log(person)
+//  console.log(person)
   if(person == ", ")
   return person.split(", ")
-console.log("test", person)
+// console.log("test", person)
 })
 
 
@@ -245,8 +245,10 @@ console.log("test", person)
 let isAdultPresent = null
 
 // Enter your solution code here:
+let currentYear = 2024
+
 isAdultPresent = devs.some((isAdult) => {
-  return isAdult.year >= 18
+  return currentYear - isAdult.year >= 18
 })
 
 
@@ -265,11 +267,13 @@ console.log('Exercise 6 My Result: ', isAdultPresent)
 let isEveryone19OrOlder = null
 
 // Enter your solution code here:
-
+isEveryone19OrOlder = devs.every((is19OrOver) => {
+  return currentYear - is19OrOver.year >= 19
+})
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
-// console.log('Exercise 7 My Result: ', isEveryone19OrOlder)
+console.log('Exercise 7 My Result: ', isEveryone19OrOlder)
 // console.log('Exercise 7 Correct Result: ', false)
 
 
