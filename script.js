@@ -182,7 +182,7 @@ let firstLast = []
 firstLast = people.map((person) => {
 //  console.log(person)
   if(person == ", ")
-  return person.split(", ")
+    return person.split(", ")
 // console.log("test", person)
 })
 
@@ -286,11 +286,14 @@ console.log('Exercise 7 My Result: ', isEveryone19OrOlder)
 let commentById = {}
 
 // Enter your solution code here:
-
+commentById = comments.find((comment) => {
+  if(comment.id === 823423) 
+    return comment
+})
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
-// console.log('Exercise 8 My Result: ', commentById)
+console.log('Exercise 8 My Result: ', commentById)
 // console.log('Exercise 8 Correct Result: ', { text: 'Super good', id: 823423 })
 
 
