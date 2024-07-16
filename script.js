@@ -179,8 +179,9 @@ let firstLast = []
 
 // Enter your solution code here:
 firstLast = people.map((person) => {
-  person.split("")
-  console.log(person)
+//  if(person === ", ")
+  return person.split(", ")
+console.log("test", person)
 })
 
 
