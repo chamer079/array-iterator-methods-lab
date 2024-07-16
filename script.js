@@ -287,8 +287,8 @@ let commentById = {}
 
 // Enter your solution code here:
 commentById = comments.find((comment) => {
-  if(comment.id === 823423) 
-    return comment
+  return comment.id === 823423
+    
 })
 
 
@@ -305,11 +305,14 @@ console.log('Exercise 8 My Result: ', commentById)
 let idx = null
 
 // Enter your solution code here:
+idx = comments.findIndex((idIndex) => {
+  return idIndex.id === 123523
+})
 
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
-// console.log('Exercise 9 My Result: ', idx)
+console.log('Exercise 9 My Result: ', idx)
 // console.log('Exercise 9 Correct Result: ', 3)
 
 
