@@ -178,7 +178,10 @@ console.log('Exercise 4 My Result: ', inventorNamedAda)
 let firstLast = []
 
 // Enter your solution code here:
-
+firstLast = people.map((person) => {
+  person.split("")
+  console.log(person)
+})
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
