@@ -87,11 +87,14 @@ console.log('Exercise 1 My Result: ', veryOldInventors)
 let inventorNames = []
 
 // Enter your solution code here:
-
+inventorNames = inventors.map((inventorName) => {
+  console.log("test")
+  return(`first: ${inventorName.first}, last: ${inventorName.last}`)
+})
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
-// console.log('Exercise 2 My Result: ', inventorNames)
+console.log('Exercise 2 My Result: ', inventorNames)
 // console.log('Exercise 2 Correct Result: ',
 //     [
 //         { first: 'Albert', last: 'Einstein' },
