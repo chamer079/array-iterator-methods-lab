@@ -180,10 +180,10 @@ let firstLast = []
 // Enter your solution code here:
 
 firstLast = people.map((person) => {
-//  console.log(person)
+ console.log(person)
   if(person == ", ")
     return person.split(", ")
-// console.log("test", person)
+console.log("test", person)
 })
 
 
