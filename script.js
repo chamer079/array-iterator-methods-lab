@@ -162,7 +162,6 @@ inventorNamedAda = inventors.find((ada) => {
   return ada.first === "Ada"
 })
 
-
 // Check your return value: *** UNCOMMENT BELOW ***
 console.log('Exercise 4 My Result: ', inventorNamedAda)
 // console.log('Exercise 4 Correct Result: ', { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 })
@@ -180,11 +179,14 @@ let firstLast = []
 // Enter your solution code here:
 
 firstLast = people.map((person) => {
- console.log(person)
-  if(person == ", ")
-    return person.split(", ")
-console.log("test", person)
+//  console.log(person)
+
+console.log("test", person.split(", "))
+//  return person.split(", ")  //<- .split(", ") removes the comma after the last name
+ console.log(person)  //<- need to get " First Last" format...if/else - condition being 'B'?
+ 
 })
+
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
