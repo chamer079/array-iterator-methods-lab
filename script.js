@@ -178,15 +178,19 @@ let firstLast = []
 
 // Enter your solution code here:
 
-firstLast = people.map((person) => {
-//  console.log(person)
 
-console.log("test", person.split(", "))
-//  return person.split(", ")  //<- .split(", ") removes the comma after the last name
- console.log(person)  //<- need to get " First Last" format...if/else - condition being 'B'?
- 
+firstLast = people.map((person) => {
+  
+
+    return person.split(", ") //  return person.split(", ")  //<- .split(", ") removes the comma after the last name
+
+
+
+//<- need to get " First Last" format...if/else - condition being 'B'?
+
 })
 
+console.log(firstLast)
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
