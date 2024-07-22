@@ -180,13 +180,16 @@ let firstLast = []
 
 
 firstLast = people.map((person) => {
-    
-// let x = person.split(", ") 
-// console.log(x)
-//   // console.log(`${x[0]} ${x[1]}`)
-//   console.log(x.reverse().join(" "))
+  return person.split(", ").reverse().join(" ") 
+  // .split(", ") removes the comma after the last name
+  // .reverse() returns the same arr but with all elements reveresed -> first element last - last element first
+  //  .join() creates & returns a new string by concatenating all of the elements w/in the arr seperated
 
-    return person.split(", ").reverse().join(" ") //<- .split(", ") removes the comma after the last name
+  // Able to use use several array methods at once as shown on line 183
+
+  // Another way to solve problem...  
+    // let x = person.split(", ") 
+    // return x.reverse().join(" ")
 })
 
 
