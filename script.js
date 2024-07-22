@@ -340,16 +340,9 @@ let totalYearsLived = 0
 totalYearsLived = inventors.reduce((sum, lifespan) => {
   lifespan = lifespan.passed - lifespan.year
 
+  console.log(lifespan)
   return(sum + lifespan)
-})
-
-
-// totalYearsLived = inventors.reduce((acc, yearsLived, inventor) => {
-//   yearsLived = inventor.passed - inventor.year
-// console.log(inventor.passed)
-//   console.log(acc + yearsLived)
-//   return acc = yearsLived
-// })
+}, 0) //<- make sure to add a 0 after the return / end of the function -> 
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
