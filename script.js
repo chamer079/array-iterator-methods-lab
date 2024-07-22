@@ -180,21 +180,19 @@ let firstLast = []
 
 
 firstLast = people.map((person) => {
-  
+    
+// let x = person.split(", ") 
+// console.log(x)
+//   // console.log(`${x[0]} ${x[1]}`)
+//   console.log(x.reverse().join(" "))
 
-    return person.split(", ") //  return person.split(", ")  //<- .split(", ") removes the comma after the last name
-
-
-
-//<- need to get " First Last" format...if/else - condition being 'B'?
-
+    return person.split(", ").reverse().join(" ") //<- .split(", ") removes the comma after the last name
 })
 
-console.log(firstLast)
 
 
 // Check your return value: *** UNCOMMENT BELOW ***
-// console.log('Exercise 5 My Result: ', firstLast)
+console.log('Exercise 5 My Result: ', firstLast)
 // console.log('Exercise 5 Correct Result: ',
 //     [
 //         'Carl Becker',
