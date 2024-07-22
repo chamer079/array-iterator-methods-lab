@@ -192,8 +192,6 @@ firstLast = people.map((person) => {
     // return x.reverse().join(" ")
 })
 
-
-
 // Check your return value: *** UNCOMMENT BELOW ***
 console.log('Exercise 5 My Result: ', firstLast)
 // console.log('Exercise 5 Correct Result: ',
@@ -339,11 +337,18 @@ console.log('Exercise 9 My Result: ', idx)
 let totalYearsLived = 0
 
 // Enter your solution code here:
+totalYearsLived = inventors.reduce((sum, lifespan) => {
+  lifespan = lifespan.passed - lifespan.year
+
+  return(sum + lifespan)
+})
 
 
-
-// totalYearsLived = inventors.reduce((yearBorn, yearDied) => { // <-- prints NaN
-//   return yearBorn.year + yearDied.passed
+// totalYearsLived = inventors.reduce((acc, yearsLived, inventor) => {
+//   yearsLived = inventor.passed - inventor.year
+// console.log(inventor.passed)
+//   console.log(acc + yearsLived)
+//   return acc = yearsLived
 // })
 
 
